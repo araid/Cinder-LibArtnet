@@ -1,8 +1,8 @@
 #include "cinder/app/App.h"
-#include "cinder/CinderMath.h"
-#include "CinderLibArtnet.h"
 #include "cinder/app/RendererGl.h"
 #include "cinder/gl/gl.h"
+
+#include "CinderLibArtnet.h"
 
 using namespace ci;
 using namespace ci::app;
@@ -20,7 +20,7 @@ void ArtnetSenderApp::setup()
 {
     //node.setNumUniverses(num_universes);//optional, setup() will create a single universe 1 at index 0 otherwise
     //node.setUniverseAtIndex(index,universe);//optional, otherwise universes start at 1
-    node.setup("192.168.0.10",true);//need to enable sendRaw if sending to multiple artnet devices
+    node.setup("10.0.1.8", true);//need to enable sendRaw if sending to multiple artnet devices
 	//"192.168.42.182"
 }
 

@@ -14,6 +14,9 @@
 		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
 		013A26E5B36A4A8E9FCE4D69 /* transmit.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E70F1EAE65A48E4B681F93D /* transmit.c */; };
 		1FC555BEF00E4468A27BC845 /* artnet.c in Sources */ = {isa = PBXBuildFile; fileRef = CE35E128CBED4BCE800E8DF7 /* artnet.c */; };
+		2052997620C72986007CCDE1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2052997520C72986007CCDE1 /* AVFoundation.framework */; };
+		2052997820C72999007CCDE1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2052997720C72998007CCDE1 /* CoreMedia.framework */; };
+		2052997C20C729E9007CCDE1 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2052997B20C729E8007CCDE1 /* IOKit.framework */; };
 		3C9EDB9C1C53432FB4CE4C24 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = F89427B3B13648CBBB98037A /* CinderApp.icns */; };
 		4B3A70E8F8C44F9BA7521B01 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 05719B7FF7964320A05B7988 /* misc.c */; };
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
@@ -34,11 +37,16 @@
 		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		05719B7FF7964320A05B7988 /* misc.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = misc.c; path = ../../../lib/artnet/misc.c; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2052997420C727D3007CCDE1 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../../../lib/artnet/config.h; sourceTree = "<group>"; };
+		2052997520C72986007CCDE1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2052997720C72998007CCDE1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2052997920C729AE007CCDE1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2052997A20C729B2007CCDE1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2052997B20C729E8007CCDE1 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		25C8F1411E4F45B8A5499372 /* ArtnetSender_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = ArtnetSender_Prefix.pch; sourceTree = "<group>"; };
 		28C8D3732CAD499989733D9C /* CinderLibArtnet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = CinderLibArtnet.cpp; path = ../../../src/CinderLibArtnet.cpp; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32D52A67634B4ECAB07CBD22 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../../../lib/artnet/config.h; sourceTree = "<group>"; };
 		4E70F1EAE65A48E4B681F93D /* transmit.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = transmit.c; path = ../../../lib/artnet/transmit.c; sourceTree = "<group>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
@@ -65,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2052997C20C729E9007CCDE1 /* IOKit.framework in Frameworks */,
+				2052997820C72999007CCDE1 /* CoreMedia.framework in Frameworks */,
+				2052997620C72986007CCDE1 /* AVFoundation.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
 				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
@@ -98,6 +109,8 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2052997A20C729B2007CCDE1 /* CoreMedia.framework */,
+				2052997920C729AE007CCDE1 /* AVFoundation.framework */,
 				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
 				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
 				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
@@ -161,6 +174,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2052997B20C729E8007CCDE1 /* IOKit.framework */,
+				2052997720C72998007CCDE1 /* CoreMedia.framework */,
+				2052997520C72986007CCDE1 /* AVFoundation.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -178,11 +194,11 @@
 				4E70F1EAE65A48E4B681F93D /* transmit.c */,
 				8C2E3D2587C84BC887F36730 /* artnet.h */,
 				BFBA9245D8774EAAA79D32D5 /* common.h */,
-				32D52A67634B4ECAB07CBD22 /* config.h */,
 				C2180BF3D7174E45AD2F1F3E /* misc.h */,
 				EE6BED734B8D45D0BB4B5BC3 /* packets.h */,
 				A9878E201EFD4996832D7362 /* private.h */,
 				A01B62C3FB824387A8058313 /* tod.h */,
+				2052997420C727D3007CCDE1 /* config.h */,
 			);
 			name = artnet;
 			sourceTree = "<group>";
@@ -239,6 +255,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ArtnetSender" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -305,14 +323,9 @@
 					HAVE_CONFIG_H,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					"\"$(CINDER_PATH)/boost\"",
-					../../../lib,
-					../../../lib/artnet,
-				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
 				PRODUCT_NAME = ArtnetSender;
 				SYMROOT = ./build;
 				WRAPPER_EXTENSION = app;
@@ -333,14 +346,9 @@
 				GCC_PREFIX_HEADER = ArtnetSender_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					"\"$(CINDER_PATH)/boost\"",
-					../../../lib,
-					../../../lib/artnet,
-				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
 				PRODUCT_NAME = ArtnetSender;
 				STRIP_INSTALLED_PRODUCT = YES;
 				SYMROOT = ./build;
@@ -352,17 +360,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CINDER_PATH = ../../../../..;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"\"$(CINDER_PATH)/boost\"",
+					"\"$(CINDER_PATH)/include\"",
 					../../../lib,
+					../../../lib/artnet,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
 			};
@@ -372,17 +382,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = i386;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CINDER_PATH = ../../../../..;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"\"$(CINDER_PATH)/boost\"",
+					"\"$(CINDER_PATH)/include\"",
 					../../../lib,
+					../../../lib/artnet,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
 			};
