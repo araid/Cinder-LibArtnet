@@ -437,6 +437,8 @@ int artnet_net_init(node n, const char *preferred_ip) {
   }
 
   if (preferred_ip) {
+  //if (FALSE) { // Ignoring IP works and it detects the device automatically
+
     // search through list of interfaces for one with the correct address
     ret = artnet_net_inet_aton(preferred_ip, &wanted_ip);
     if (ret)
@@ -462,7 +464,10 @@ int artnet_net_init(node n, const char *preferred_ip) {
       // copy ip address, bcast address and hardware address
       n->state.ip_addr = ift_head->ip_addr.sin_addr;
       n->state.bcast_addr = ift_head->bcast_addr.sin_addr;
-      memcpy(&n->state.hw_addr, &ift_head->hw_addr, ARTNET_MAC_SIZE);
+	  memcpy(&n->state.hw_addr, &ift_head->hw_addr, ARTNET_MAC_SIZE);
+
+	  printf("IP: %s\n", inet_ntoa(n->state.ip_addr));
+	  printf("Broadcast IP: %s\n", inet_ntoa(n->state.bcast_addr));
     } else {
       artnet_error("No interfaces found!");
       ret = ARTNET_ENET;
